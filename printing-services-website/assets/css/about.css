@@ -33,12 +33,12 @@
   line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -1px;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 .about-hero p {
   font-size: 1.15rem;
-  color: rgba(255,255,255,0.9);
+  color: var(--text-main);
 }
 
 .about-hero-image {
