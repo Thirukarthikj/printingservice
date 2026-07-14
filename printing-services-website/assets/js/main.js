@@ -54,4 +54,57 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('active');
     });
   }
+
+  // Products Carousel Logic
+  const productsCarousel = document.getElementById('products-carousel');
+  const btnPrev = document.getElementById('prod-prev');
+  const btnNext = document.getElementById('prod-next');
+  let autoPlayInterval;
+
+  if (productsCarousel && btnPrev && btnNext) {
+    const scrollAmount = 400; // width of a card + gap
+
+    const scrollNext = () => {
+      // Check if we reached the end
+      if (productsCarousel.scrollLeft + productsCarousel.clientWidth >= productsCarousel.scrollWidth - 10) {
+        productsCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        productsCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    };
+
+    const scrollPrev = () => {
+      if (productsCarousel.scrollLeft <= 0) {
+        productsCarousel.scrollTo({ left: productsCarousel.scrollWidth, behavior: 'smooth' });
+      } else {
+        productsCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      }
+    };
+
+    btnNext.addEventListener('click', () => {
+      scrollNext();
+      resetAutoPlay();
+    });
+
+    btnPrev.addEventListener('click', () => {
+      scrollPrev();
+      resetAutoPlay();
+    });
+
+    // Auto Play
+    const startAutoPlay = () => {
+      autoPlayInterval = setInterval(scrollNext, 3000); // 3 seconds
+    };
+
+    const resetAutoPlay = () => {
+      clearInterval(autoPlayInterval);
+      startAutoPlay();
+    };
+
+    startAutoPlay();
+
+    // Pause on hover
+    productsCarousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+    productsCarousel.addEventListener('mouseleave', startAutoPlay);
+  }
 });

@@ -1,12 +1,13 @@
 .navbar {
-  padding: 24px 0;
+  padding: 16px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
-  background-color: transparent;
-  border-bottom: 1px solid transparent;
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--bg-border);
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar.scrolled {

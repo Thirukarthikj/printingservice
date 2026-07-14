@@ -1,8 +1,23 @@
 /* About Page Modern Styles */
 
 .about-hero {
-  padding: 100px 0;
-  background-color: var(--bg-white);
+  padding: 140px 0 100px 0;
+  background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--text-light);
+}
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(15, 118, 110, 0.4); /* Reduced opacity so image is clearly visible */
+  z-index: 1;
+}
+.about-hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .about-hero-grid {
@@ -28,11 +43,12 @@
   line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -1px;
+  color: var(--text-light);
 }
 
 .about-hero p {
   font-size: 1.15rem;
-  color: var(--text-main);
+  color: rgba(255,255,255,0.9);
 }
 
 .about-hero-image {
@@ -122,14 +138,51 @@
   padding: 60px;
   border-radius: var(--radius-xl);
   color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.mv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.mv-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.mv-icon svg {
+  color: white;
+  width: 32px;
+  height: 32px;
+}
+
+.mv-card:hover .mv-icon {
+  transform: scale(1.1) rotate(5deg);
+  background: rgba(255,255,255,0.25);
 }
 
 .mv-mission {
-  background: var(--primary-blue);
+  background: linear-gradient(rgba(15, 118, 110, 0.9), rgba(15, 118, 110, 0.9)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
 }
 
 .mv-vision {
-  background: var(--dark-navy);
+  background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=800&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
 }
 
 .mv-card h2 {
@@ -147,7 +200,7 @@
 /* Core Values */
 .values-section {
   padding: 100px 0;
-  background: var(--bg-white);
+  background-color: #e2e8f0; /* Darker slate-grey for extremely visible contrast */
 }
 
 .values-grid {
@@ -157,12 +210,36 @@
   margin-top: 60px;
 }
 
+.value-item {
+  background: var(--bg-white);
+  padding: 40px;
+  border-radius: var(--radius-card);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+.value-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
 .value-item .icon {
-  width: 56px;
-  height: 56px;
-  background: var(--primary-blue-light);
-  border-radius: var(--radius-sm);
+  width: 64px;
+  height: 64px;
+  background: var(--primary-blue);
+  border-radius: 16px;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.value-item .icon svg {
+  color: white !important;
+  width: 32px;
+  height: 32px;
+}
+.value-item:hover .icon {
+  transform: rotate(-5deg) scale(1.1);
 }
 
 .value-item h3 {

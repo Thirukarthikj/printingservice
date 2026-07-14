@@ -26,6 +26,7 @@
   
   /* Typography */
   --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
   
   /* Layout Sizing */
   --container-width: 1200px;
