@@ -13,6 +13,7 @@ body {
   background-color: var(--bg-light);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .container {
@@ -161,4 +162,11 @@ a {
 .lucide {
   stroke-width: 2;
   transition: all 0.3s ease;
+}
+
+/* Hero Actions Container */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }

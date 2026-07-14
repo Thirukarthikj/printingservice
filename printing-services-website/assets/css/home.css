@@ -543,6 +543,9 @@
   .masonry-grid {
     column-count: 1; /* For very small phones, switch to 1 column so images are visible */
   }
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
   .overlay-content h4 {
     font-size: 20px;
   }

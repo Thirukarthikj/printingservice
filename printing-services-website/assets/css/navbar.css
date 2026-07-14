@@ -167,10 +167,16 @@
   }
   
   .nav-whatsapp {
-    padding: 0 12px !important;
+    padding: 0 10px !important;
     height: 38px !important;
-    font-size: 13px !important;
-    border-radius: 12px !important;
+    font-size: 0 !important; /* Hides the text */
+    border-radius: 10px !important;
+    gap: 0 !important;
+  }
+  
+  .nav-whatsapp svg {
+    width: 20px !important;
+    height: 20px !important;
   }
 
   .mobile-menu-btn {
