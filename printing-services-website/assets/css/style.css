@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-main);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography Hierarchy */
+h1 {
+  font-size: 60px; /* Hero Title */
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 40px; /* Section Heading */
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 24px; /* Card Title */
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px; /* Paragraph */
+  color: var(--text-muted);
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  transition: all 0.3s ease;
+}
+
+/* Button Design */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  height: 54px;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-blue-hover);
+  color: var(--text-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline {
+  background-color: var(--bg-white);
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+}
+
+.btn-accent {
+  background-color: var(--accent-orange);
+  color: var(--text-light);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-orange-hover);
+  color: var(--text-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-dark {
+  background-color: var(--dark-navy);
+  color: var(--text-light);
+}
+
+.btn-dark:hover {
+  background-color: var(--dark-navy-hover);
+  color: var(--text-light);
+}
+
+/* Premium Card Utility */
+.premium-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--bg-border);
+  box-shadow: var(--shadow-sm);
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.section-header p {
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Lucide Icon Wrapper */
+.lucide {
+  stroke-width: 2;
+  transition: all 0.3s ease;
+}

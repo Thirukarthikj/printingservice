@@ -1,0 +1,46 @@
+:root {
+  /* Brand Colors (Emerald Green & Teal) */
+  --primary-blue: #0F766E; /* Kept variable name for consistency, mapped to Emerald */
+  --primary-blue-hover: #115E59;
+  --primary-blue-light: #CCFBF1;
+  
+  --secondary-cyan: #14B8A6;
+  --accent-orange: #F97316;
+  --accent-orange-hover: #EA580C;
+  
+  --dark-navy: #0F172A;
+  --dark-navy-hover: #1E293B;
+  
+  --bg-white: #FFFFFF;
+  --bg-light: #F8FAFC;
+  --bg-border: #E2E8F0;
+  
+  /* Text Colors */
+  --text-main: #0F172A;
+  --text-dark: #0F172A;
+  --text-light: #FFFFFF;
+  --text-muted: #64748B;
+  
+  /* Status Colors */
+  --success: #16A34A;
+  
+  /* Typography */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Layout Sizing */
+  --container-width: 1200px;
+  --section-padding: 120px 0;
+  
+  /* Strict Border Radius */
+  --radius-sm: 8px;
+  --radius-btn: 16px;
+  --radius-card: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  
+  /* Soft Shadows */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+}
