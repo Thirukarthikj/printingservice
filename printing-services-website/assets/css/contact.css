@@ -1,8 +1,13 @@
 /* Contact Page Styles */
 
 .contact-header {
-  padding: 80px 0 60px;
-  background: var(--bg-white);
+  padding: 180px 0 80px;
+  background-color: #F8FAFC;
+  background-image: 
+    linear-gradient(rgba(248, 250, 252, 0.7), rgba(248, 250, 252, 0.85)),
+    url('https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
@@ -17,7 +22,7 @@
 }
 
 .contact-main {
-  padding: 0 0 100px;
+  padding: 60px 0 100px;
   background: var(--bg-white);
 }
 
@@ -197,20 +202,46 @@ textarea.input-field {
 }
 
 .faq-item {
-  background: var(--bg-white);
-  padding: 24px;
-  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--bg-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+.faq-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
-  color: var(--text-dark);
-  cursor: pointer;
-  box-shadow: var(--shadow-sm);
+  width: 100%;
 }
 
-.faq-item:hover {
-  border-color: var(--primary-blue);
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin-top 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  color: var(--text-main);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-content {
+  max-height: 200px;
+  margin-top: 16px;
+  opacity: 1;
+}
+
+.faq-item.active i {
+  transform: rotate(180deg);
+}
+
+.faq-item i {
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 992px) {

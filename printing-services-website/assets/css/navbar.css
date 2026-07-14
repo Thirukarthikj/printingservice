@@ -1,13 +1,12 @@
 .navbar {
-  padding: 16px 0;
+  padding: 24px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
-  background-color: var(--bg-white);
-  border-bottom: 1px solid var(--bg-border);
-  box-shadow: var(--shadow-sm);
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .navbar.scrolled {
@@ -53,6 +52,24 @@
 
 .nav-links a:hover, .nav-links a.active {
   color: var(--primary-blue);
+}
+
+/* Modifiers for transparent nav on dark backgrounds */
+.navbar-dark:not(.scrolled) .navbar-brand {
+  color: var(--text-light);
+}
+
+.navbar-dark:not(.scrolled) .nav-links a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark:not(.scrolled) .nav-links a:hover,
+.navbar-dark:not(.scrolled) .nav-links a.active {
+  color: var(--text-light);
+}
+
+.navbar-dark:not(.scrolled) .nav-links a::after {
+  background-color: var(--text-light);
 }
 
 .nav-links a::after {

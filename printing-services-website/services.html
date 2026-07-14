@@ -33,131 +33,175 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="services-header">
-    <div class="container">
-      <span class="catalog-badge">PREMIUM CATALOG</span>
-      <h1>Our Printing Services</h1>
-      <p>From high-volume commercial production to bespoke stationery, we leverage industrial-grade technology and expert craftsmanship to bring your vision to life.</p>
+  <!-- Hero Section -->
+  <header class="services-hero">
+    <div class="container services-hero-content">
+      <div class="hero-text">
+        <span class="badge">Enterprise Solutions</span>
+        <h1>Precision Printing for the Modern Enterprise</h1>
+        <p>We transform your digital vision into tactile reality with industry-leading technology and artisanal craftsmanship.</p>
+        <div class="hero-actions">
+           <a href="#services" class="btn btn-primary">Explore Services</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Service Categories -->
-  <section class="service-categories">
-    <div class="container">
-      
-      <!-- Top Grid (Commercial + Stationery) -->
-      <div class="svc-grid-top">
-        <div class="premium-card svc-card">
-          <span class="cat-num">CATEGORY 01</span>
-          <div class="svc-icon"><i data-lucide="briefcase" style="width: 32px; height: 32px; color: var(--primary-blue);"></i></div>
-          <h2>Commercial Solutions</h2>
+  <!-- Alternating Showcase -->
+  <section id="services" class="services-showcase">
+    <!-- Service 1 -->
+    <div class="showcase-row">
+      <div class="container showcase-grid">
+        <div class="showcase-content">
+          <div class="svc-icon"><i data-lucide="printer"></i></div>
+          <h2>Commercial & Offset Production</h2>
           <p>High-capacity offset and digital printing for large-scale enterprise needs. Precision consistency for massive volumes.</p>
-          <ul class="commercial-list" style="list-style: none;">
-            <li>Catalogues & Magazines</li>
-            <li>Annual Corporate Reports</li>
-            <li>High-Volume Direct Mail</li>
-            <li>Wholesale Packaging</li>
+          <ul class="feature-list">
+            <li><i data-lucide="check-circle-2"></i> Catalogues & Magazines</li>
+            <li><i data-lucide="check-circle-2"></i> Annual Corporate Reports</li>
+            <li><i data-lucide="check-circle-2"></i> High-Volume Direct Mail</li>
+            <li><i data-lucide="check-circle-2"></i> Fast Turnaround Times</li>
           </ul>
-          <img src="https://images.unsplash.com/photo-1590483736622-398541c422be?q=80&w=800&auto=format&fit=crop" class="svc-img" alt="Commercial Printing">
         </div>
-        
-        <div class="premium-card svc-card">
-          <div class="svc-icon"><i data-lucide="file-badge" style="width: 32px; height: 32px; color: var(--primary-blue);"></i></div>
-          <h2>Business Stationery</h2>
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1920&auto=format&fit=crop" alt="Commercial Printing">
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="showcase-row alt">
+      <div class="container showcase-grid reverse">
+        <div class="showcase-content">
+          <div class="svc-icon"><i data-lucide="pen-tool"></i></div>
+          <h2>Luxury Business Stationery</h2>
           <p>Elegant tactile experiences for your brand's physical presence. Premium paper stocks and artisanal finishes.</p>
-          <div class="pill-list">
-            <div class="pill-item">Letterheads & Envelopes</div>
-            <div class="pill-item">Luxury Business Cards</div>
-            <div class="pill-item">Branded Folders</div>
-          </div>
-          <img src="https://images.unsplash.com/photo-1588693959306-b5168022649a?q=80&w=800&auto=format&fit=crop" class="svc-img" alt="Stationery">
+          <ul class="feature-list">
+            <li><i data-lucide="check-circle-2"></i> Foil Stamping & Embossing</li>
+            <li><i data-lucide="check-circle-2"></i> Letterpress & Edge Painting</li>
+            <li><i data-lucide="check-circle-2"></i> Premium Paper Stocks (300gsm+)</li>
+            <li><i data-lucide="check-circle-2"></i> Bespoke Envelopes & Folders</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1588693959306-b5168022649a?q=80&w=1920&auto=format&fit=crop" alt="Luxury Stationery">
         </div>
       </div>
+    </div>
 
-      <!-- Bottom Grid (Marketing + Education) -->
-      <div class="svc-grid-bottom">
-        <div class="premium-card svc-card">
-          <div class="svc-icon"><i data-lucide="megaphone" style="width: 32px; height: 32px; color: var(--primary-blue);"></i></div>
-          <h2>Marketing Assets</h2>
-          <p>Vibrant, eye-catching collateral designed to convert. Wide-format options available.</p>
-          <div class="tag-list">
-            <span class="tag-item">Banners</span>
-            <span class="tag-item">Brochures</span>
-            <span class="tag-item">Posters</span>
-            <span class="tag-item">Flyers</span>
-          </div>
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop" class="svc-img" alt="Marketing">
+    <!-- Service 3 -->
+    <div class="showcase-row">
+      <div class="container showcase-grid">
+        <div class="showcase-content">
+          <div class="svc-icon"><i data-lucide="image"></i></div>
+          <h2>Marketing & Wide-Format</h2>
+          <p>Vibrant, eye-catching collateral designed to convert. From brochures to massive trade show displays, we handle it all.</p>
+          <ul class="feature-list">
+            <li><i data-lucide="check-circle-2"></i> Banners & Trade Show Displays</li>
+            <li><i data-lucide="check-circle-2"></i> Vibrant Brochures & Flyers</li>
+            <li><i data-lucide="check-circle-2"></i> Window & Floor Graphics</li>
+            <li><i data-lucide="check-circle-2"></i> Outdoor Weatherproof Signage</li>
+          </ul>
         </div>
-        
-        <div class="premium-card svc-card">
-          <div class="svc-icon"><i data-lucide="graduation-cap" style="width: 32px; height: 32px; color: var(--primary-blue);"></i></div>
-          <h2>Educational & Training</h2>
-          <p>Comprehensive print management for institutions. From textbooks to complex training manuals with various binding options.</p>
-          <div class="edu-content">
-            <div class="edu-text">
-              <div class="edu-table">
-                <div class="edu-row">
-                  <span>Hardcover Binding</span>
-                  <span>Premium</span>
-                </div>
-                <div class="edu-row">
-                  <span>Spiral & Wire-O</span>
-                  <span>Standard</span>
-                </div>
-                <div class="edu-row">
-                  <span>Lamination</span>
-                  <span>Durable</span>
-                </div>
-              </div>
-            </div>
-            <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=800&auto=format&fit=crop" class="edu-image" alt="Books">
-          </div>
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1920&auto=format&fit=crop" alt="Marketing Assets">
         </div>
       </div>
+    </div>
 
+    <!-- Service 4 -->
+    <div class="showcase-row alt">
+      <div class="container showcase-grid reverse">
+        <div class="showcase-content">
+          <div class="svc-icon"><i data-lucide="package"></i></div>
+          <h2>Bespoke Packaging</h2>
+          <p>Unboxing experiences that leave a lasting impression. Custom structural design, die-cutting, and luxury finishes for retail and PR boxes.</p>
+          <ul class="feature-list">
+            <li><i data-lucide="check-circle-2"></i> Custom Die-Cut Boxes</li>
+            <li><i data-lucide="check-circle-2"></i> Premium Product Packaging</li>
+            <li><i data-lucide="check-circle-2"></i> Eco-Friendly Kraft & Recycled Options</li>
+            <li><i data-lucide="check-circle-2"></i> PR Seeding & Influencer Kits</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1607004468138-07e1f145c33a?q=80&w=1920&auto=format&fit=crop" alt="Bespoke Packaging">
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Process -->
-  <section class="svc-process">
+  <!-- Capabilities -->
+  <section class="capabilities-section">
     <div class="container">
-      <h2>Our Seamless Process</h2>
-      <p style="color: var(--text-muted);">From concept to delivery, we ensure your project is handled with precision at every stage of production.</p>
-      
-      <div class="process-grid">
-        <div class="p-step">
-          <div class="p-circle">1</div>
-          <h4>Consultation</h4>
-          <p>Review specifications and choose premium materials.</p>
+      <div class="cap-header">
+        <h2>Our Technical Edge</h2>
+        <p>We invest heavily in state-of-the-art machinery and sustainable practices.</p>
+      </div>
+      <div class="cap-grid">
+        <div class="cap-card">
+          <div class="cap-icon"><i data-lucide="aperture"></i></div>
+          <h4>G7 Master Certified Color</h4>
+          <p>Flawless color accuracy across every single print run, matching your brand guidelines perfectly.</p>
         </div>
-        <div class="p-step">
-          <div class="p-circle">2</div>
-          <h4>File Prep</h4>
-          <p>Our prepress experts verify your artwork for perfection.</p>
+        <div class="cap-card">
+          <div class="cap-icon"><i data-lucide="clock"></i></div>
+          <h4>24/7 Production Cycle</h4>
+          <p>Our facilities operate around the clock to ensure even the most aggressive deadlines are met.</p>
         </div>
-        <div class="p-step">
-          <div class="p-circle">3</div>
-          <h4>Production</h4>
-          <p>Precision printing using state-of-the-art machinery.</p>
+        <div class="cap-card">
+          <div class="cap-icon"><i data-lucide="leaf"></i></div>
+          <h4>Sustainable Practices</h4>
+          <p>FSC-certified papers and eco-friendly soy-based inks to minimize environmental impact.</p>
         </div>
-        <div class="p-step">
-          <div class="p-circle">4</div>
-          <h4>Delivery</h4>
-          <p>Secure packaging and priority shipping to your doorstep.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Timeline -->
+  <section class="timeline-section">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 60px;">Our Seamless Workflow</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <div class="timeline-content premium-card">
+            <h4>Consultation & Scoping</h4>
+            <p>We review your specifications, recommend premium materials, and provide a transparent quote.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-content premium-card">
+            <h4>Pre-Press & Proofing</h4>
+            <p>Our experts verify artwork files and provide physical proofs to guarantee absolute perfection.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <div class="timeline-content premium-card">
+            <h4>Precision Production</h4>
+            <p>Your project enters our state-of-the-art production line under strict quality control standards.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">4</div>
+          <div class="timeline-content premium-card">
+            <h4>Global Logistics</h4>
+            <p>Secure packaging and priority shipping directly to your headquarters or split-shipped globally.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Banner -->
-  <section class="blue-cta" style="background: var(--primary-blue); padding: 80px 0;">
+  <section class="blue-cta">
     <div class="container" style="text-align: center;">
-      <h2 style="color: var(--text-light); font-size: 2.5rem; margin-bottom: 16px;">Ready to start your next project?</h2>
-      <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 32px;">Experience the ElitePrint difference with a free consultation and project estimate today.</p>
+      <h2>Ready to start your next project?</h2>
+      <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 32px; max-width: 600px; margin-inline: auto;">Experience the ElitePrint difference with a free consultation and project estimate today.</p>
       <div class="hero-actions" style="justify-content: center;">
         <a href="contact.html" class="btn btn-accent">Get Quote</a>
-        <a href="gallery.html" class="btn btn-outline" style="background: transparent; border-color: rgba(255,255,255,0.5); color: var(--text-light);">View Gallery</a>
+        <a href="gallery.html" class="btn btn-outline" style="background: transparent; border-color: rgba(255,255,255,0.3); color: var(--text-light);">View Gallery</a>
       </div>
     </div>
   </section>
