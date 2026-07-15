@@ -5,7 +5,7 @@
   background-color: var(--primary-blue);
   background-image: 
     linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.4) 100%),
-    url('https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=1920&auto=format&fit=crop');
+    url('../images/img9.jpg');
   background-size: cover;
   background-position: center;
   color: var(--text-light);

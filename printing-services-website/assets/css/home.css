@@ -6,7 +6,7 @@
   background-color: #F8FAFC;
   /* Premium abstract paper background with lighter overlay to increase visibility */
   background-image:
-    linear-gradient(rgba(248, 250, 252, 0.7)),
+    linear-gradient(rgba(248, 250, 252, 0.4), rgba(248, 250, 252, 0.6)),
     url('../images/img6.jpg');
   background-size: cover;
   background-position: center;
